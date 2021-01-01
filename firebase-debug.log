@@ -1,0 +1,110 @@
+[debug] [2020-12-01T11:12:38.194Z] ----------------------------------------------------------------------
+[debug] [2020-12-01T11:12:38.198Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\alf\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2020-12-01T11:12:38.198Z] CLI Version:   8.16.2
+[debug] [2020-12-01T11:12:38.198Z] Platform:      win32
+[debug] [2020-12-01T11:12:38.199Z] Node Version:  v12.14.0
+[debug] [2020-12-01T11:12:38.200Z] Time:          Tue Dec 01 2020 18:12:38 GMT+0700 (GMT+07:00)
+[debug] [2020-12-01T11:12:38.200Z] ----------------------------------------------------------------------
+[debug] [2020-12-01T11:12:38.201Z] 
+[debug] [2020-12-01T11:12:38.212Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-12-01T11:12:38.213Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\xampp2\htdocs\testVue\coba-project
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2020-12-01T11:13:54.494Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-12-01T11:13:54.495Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-12-01T11:13:54.818Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 01 Dec 2020 11:13:55 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-01T11:13:54.854Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects?pageSize=100  
+ 
+[debug] [2020-12-01T11:13:55.528Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Dec 2020 11:13:56 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  Using project movie-app-37708 (movie-app) 
+[info] 
+=== Database Setup
+[info] 
+[info] Firebase Realtime Database Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2020-12-01T11:14:02.049Z] >>> HTTP REQUEST GET https://movie-app-37708.firebaseio.com/.settings/rules.json  
+ 
+[debug] [2020-12-01T11:14:06.177Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Tue, 01 Dec 2020 11:14:06 GMT","content-type":"application/json; charset=utf-8","content-length":"161","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[info] +  Database Rules for movie-app-37708 have been downloaded to database.rules.json. 
+[info] Future modifications to database.rules.json will update Database Rules when you run
+[info] firebase deploy.
+[info] 
+=== Firestore Setup
+[debug] [2020-12-01T11:14:06.190Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/movie-app-37708/services/firestore.googleapis.com  
+ 
+[debug] [2020-12-01T11:14:07.889Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Dec 2020 11:14:08 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-01T11:14:07.890Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/movie-app-37708  
+ 
+[debug] [2020-12-01T11:14:08.730Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Dec 2020 11:14:09 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-01T11:14:08.732Z] database_type: CLOUD_FIRESTORE
+[debug] [2020-12-01T11:14:08.733Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-12-01T11:14:08.735Z] > authorizing via signed-in user
+[debug] [2020-12-01T11:14:08.735Z] [iam] checking project movie-app-37708 for permissions ["firebase.projects.get"]
+[debug] [2020-12-01T11:14:08.737Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/movie-app-37708:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2020-12-01T11:14:10.099Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Dec 2020 11:14:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=985","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2020-12-01T11:14:10.111Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/movie-app-37708/releases?pageSize=10&pageToken=  
+ 
+[debug] [2020-12-01T11:14:11.691Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Dec 2020 11:14:12 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-01T11:14:11.693Z] Found ruleset: projects/movie-app-37708/rulesets/8142c64d-0a69-4c55-a707-7bec8989c429
+[debug] [2020-12-01T11:14:11.694Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/movie-app-37708/rulesets/8142c64d-0a69-4c55-a707-7bec8989c429  
+ 
+[debug] [2020-12-01T11:14:13.161Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Dec 2020 11:14:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2020-12-01T11:14:16.896Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/movie-app-37708/databases/(default)/collectionGroups/-/indexes  
+ 
+[debug] [2020-12-01T11:14:16.897Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/movie-app-37708/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
+ 
+[debug] [2020-12-01T11:14:18.805Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Dec 2020 11:14:19 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-01T11:14:18.835Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 01 Dec 2020 11:14:19 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2020-12-01T11:14:40.351Z] >>> HTTP REQUEST GET https://www.gstatic.com/firebasejs/releases.json  
+ 
+[debug] [2020-12-01T11:14:40.564Z] <<< HTTP RESPONSE 200 {"accept-ranges":"bytes","vary":"Accept-Encoding, Origin","content-type":"application/json","cross-origin-resource-policy":"cross-origin","content-length":"1411","date":"Tue, 01 Dec 2020 11:14:41 GMT","expires":"Tue, 01 Dec 2020 12:04:41 GMT","last-modified":"Fri, 20 Nov 2020 01:53:31 GMT","x-content-type-options":"nosniff","server":"sffe","x-xss-protection":"0","cache-control":"public, max-age=3000","age":"0","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\""}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\xampp2\htdocs\testVue\coba-project is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=440454946&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
