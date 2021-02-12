@@ -1,2 +1,3 @@
-# vue3_movie_app
- Vue 3 + Firebase
+# Vue JS 3 Movie App
+
+Project from Udemy Class
